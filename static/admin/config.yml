@@ -30,6 +30,16 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - file: "static/api/sermon.json"
+        label: "Sermon"
+        name: "sermon"
+        fields:
+          - label: "Video"
+            name: video
+            widget: "list"
+            fields:
+              - {label: "Youtube ID", name: youtubeId, widget: string }
+              - {label: Title, name: title, widget: string }
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
